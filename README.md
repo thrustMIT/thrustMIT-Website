@@ -1,7 +1,7 @@
 # thrustMIT-Website
 Official Website of thrustMIT 🚀🚀, Official Student Rocketry Team of thrustMIT
-
-For Queries Contact,
-team.manager@thrustmit.in
-utkarshanand221@gmail.com
-Vanshitha02@gmail.com
+<br>
+For Queries Contact,<br>
+team.manager@thrustmit.in<br>
+utkarshanand221@gmail.com<br>
+Vanshitha02@gmail.com<br>
