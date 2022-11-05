@@ -49,6 +49,7 @@ h6 {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -57,8 +58,9 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: black;
-  justify-content: center;
+  background: rgba(42, 44, 57, 0.9);
+  justify-content: centered;
+ margin-left:20%;
 }
 
 #header.header-transparent {
@@ -85,8 +87,8 @@ h6 {
 }
 
 #header .logo img {
-  padding: 0;
-  margin: 100px;
+  padding-right: 0px;
+  margin-right: 0px;
   max-height: 40px;
 }
 
@@ -97,7 +99,7 @@ h6 {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 0;
+  padding-left: 0;
 }
 
 .navbar ul {
@@ -150,8 +152,8 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  background: black;
+  box-shadow: 0px 0px 30px rgba(11, 11, 11, 0.25);
   transition: 0.3s;
   border-radius: 15px;
 }
@@ -162,7 +164,7 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  color: black;
+  color: white;
   margin: 0 5px;
   font-size: 14px;
 }
@@ -174,7 +176,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #fff;
+  color: white;
 }
 
 .navbar .dropdown:hover > ul {
@@ -210,7 +212,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: white;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -226,6 +228,11 @@ h6 {
   .navbar ul {
     display: none;
   }
+
+  .project-dropdown {
+    min-width: 100%;
+  }
+  
 }
 
 .navbar-mobile {
@@ -255,7 +262,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: black;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -265,7 +272,7 @@ h6 {
   padding: 10px 20px;
   margin: 5px;
   font-size: 15px;
-  color: #2a2c39;
+  color: whitesmoke;
 }
 
 .navbar-mobile a:hover,
@@ -287,7 +294,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: black;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -312,6 +319,12 @@ h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
+.project-dropdown {
+  min-width: 100%;
+}
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
