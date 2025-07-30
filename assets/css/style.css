@@ -735,6 +735,49 @@ section {
   text-decoration: none;
 }
 
+
+/*--------------------------------------------------------------
+# News Feature
+--------------------------------------------------------------*/
+
+.c-item {
+  height: 100%;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.news-caption {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  z-index: 10;
+}
+
+.news-caption .news-date {
+  font-size: 1.25rem;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+.news-caption .news-headline {
+  font-size: 1.75rem;
+  font-weight: 600;
+  max-width: 75%;
+}
+
+.news-caption .news-headline i {
+  font-size: 1.75rem;
+  font-weight: 400;
+  max-width: 80%;
+}
+
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
