@@ -404,10 +404,30 @@ selector {
   overflow: hidden;
   position: relative;
   justify-content: center;
-  background-image: black;
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20%; /* Adjust as needed */
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+#myVideo {
+  /* width: 100%; */
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 #hero .carousel-container {
@@ -778,8 +798,11 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  background: rgb(62, 62, 62);
-  box-shadow: 0 2px 29px 0 rgba(255, 255, 255, 0.12);
+  /* background: rgb(62, 62, 62); */
+  background-color:  rgba(255, 255, 255, 0.091);
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 2px 29px 0 rgba(255, 255, 255, 0.12); */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.13);
   transition: all 0.1s ease-in-out;
   width: 100%;
   height: 100%;
@@ -791,8 +814,8 @@ section {
 }
 
 .projects .icon {
-  position: absolute;
-  left: 350px;
+  /* position: absolute; */
+  /* left: 350px; */
   top: calc(50% - 90px);
 }
 
@@ -803,10 +826,10 @@ section {
 }
 
 .projects .title {
-  margin-left: 40px;
+  /* margin-left: 40px; */
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: -2px;
+  font-size: 36px;
 }
 
 .projects .title a {
@@ -819,10 +842,56 @@ section {
 }
 
 .projects .description {
-  font-size: 14px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
+  font-size: 16px;
+  /* margin-left: 40px; */
+  /* line-height: 24px; */
+  margin-bottom: -15px;
+}
+
+.projects .icon-box-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.projects .text-content {
+  flex: 1;
+  min-width: 200px;
+}
+
+.projects .icon {
+  flex-shrink: 0;
+}
+
+.projects .icon img {
+  max-width: 180px;
+  height: auto;
+}
+
+.icon-box .rocket-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* margin-top: 10px; */
+  color: white;
+  table-layout: fixed;
+}
+
+.icon-box .rocket-stats-table td {
+  padding: 4px 8px;
+  vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.icon-box .rocket-stats-table td:first-child {
+  width: 30%; /* allocate a fixed width for the label column */
+}
+
+.rocket-stats-table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* optional subtle row divider */
 }
 
 /*--------------------------------------------------------------
